@@ -56,21 +56,12 @@
     <li>앱 설치마다 임의로 만들어지는 식별자, 세션 식별자, 실행 시각</li>
     <li>기기 모델, 운영체제·앱 버전</li>
   </ul>
-  <p><strong>1.1.2 이하 버전</strong>에는 Google Analytics for Firebase와 Firebase Performance Monitoring(Google LLC)이 포함되어 있어, 위 정보에 더해 다음 정보가 자동으로 전송됩니다. 1.2.0부터는 두 SDK를 제거했으며, 최신 버전으로 업데이트하면 더 이상 전송되지 않습니다.</p>
-  <ul>
-    <li>사용 통계: 앱 설치마다 만들어지는 식별자(앱 인스턴스 ID), 기기 식별자(IDFV), 앱 실행·사용 시간·화면 보기 같은 사용 이벤트</li>
-    <li>대략적인 위치: IP 주소에서 추정한 국가·지역(정밀한 위치는 수집하지 않음)</li>
-    <li>성능 정보: 앱 시작 시간, 화면 표시 속도, 앱이 보낸 네트워크 요청의 주소·응답 코드·소요 시간</li>
-  </ul>
-  <p>이 정보는 이용자 개인을 식별하는 데 쓰지 않으며, 광고·추적(App Tracking) 목적으로 사용하지 않습니다. 1.2.0부터 앱은 사용 통계(Analytics)·성능 측정 SDK와 광고 SDK를 포함하지 않습니다.</p>
+  <p>이 정보는 이용자 개인을 식별하지 않으며, 광고·추적(App Tracking) 목적으로 사용하지 않습니다.
+  앱은 사용 통계(Analytics)나 광고 SDK를 사용하지 않습니다.</p>
 
   <h2>3. 제3자 서비스</h2>
   <div class="card">
     <strong>Google Firebase Crashlytics</strong> — 크래시 리포팅·진단<br>
-    개인정보 처리방침: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
-  </div>
-  <div class="card">
-    <strong>Google Analytics for Firebase · Firebase Performance Monitoring</strong> — 1.1.2 이하 버전의 사용 통계·성능 측정(1.2.0에서 제거)<br>
     개인정보 처리방침: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
   </div>
   <div class="card">
@@ -81,7 +72,7 @@
   </div>
 
   <h2>4. 데이터 보관·삭제</h2>
-  <p>기기에 저장된 학습 데이터는 앱을 삭제하면 함께 삭제됩니다. 크래시·실행(세션) 진단 데이터와 1.1.2 이하 버전의 사용 통계·성능 정보는 Google의 정책에 따라 보관·삭제됩니다.</p>
+  <p>기기에 저장된 학습 데이터는 앱을 삭제하면 함께 삭제됩니다. 크래시·실행(세션) 진단 데이터는 Google의 정책에 따라 보관·삭제됩니다.</p>
 
   <h2>5. 아동의 개인정보</h2>
   <p>앱은 만 13세 미만 아동을 특정해 개인정보를 수집하지 않습니다.</p>
@@ -103,21 +94,14 @@
   <h2>2. Crash &amp; diagnostic data</h2>
   <p>To improve stability, the app uses <strong>Firebase Crashlytics (Google LLC)</strong>. If the app crashes, anonymous diagnostics may be collected: crash logs, device model, OS version, and app state at the time of the crash.</p>
   <p>To calculate the share of launches without a crash, the app also sends launch (session) information each time it starts: a random per-install identifier, a session identifier, the launch time, device model, and OS and app version.</p>
-  <p><strong>Versions 1.1.2 and earlier</strong> include Google Analytics for Firebase and Firebase Performance Monitoring (Google LLC), which automatically send the following in addition to the data above. Both SDKs were removed in 1.2.0; after you update, this data is no longer sent.</p>
-  <ul>
-    <li>Usage statistics: a per-install identifier (app instance ID), the device identifier for vendors (IDFV), and usage events such as app launches, time in app, and screen views</li>
-    <li>Approximate location: country and region estimated from your IP address (precise location is not collected)</li>
-    <li>Performance data: app start time, screen rendering speed, and the address, response code, and duration of network requests the app makes</li>
-  </ul>
-  <p>This data is not used to identify you, and it is not used for advertising or tracking. Starting with 1.2.0, the app includes no analytics, performance-monitoring, or advertising SDKs.</p>
+  <p>This data does not identify you and is not used for advertising or tracking. The app does not use analytics or advertising SDKs.</p>
   <h2>3. Third-party services</h2>
   <ul>
     <li>Google Firebase Crashlytics — crash reporting and diagnostics. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy policy</a>.</li>
-    <li>Google Analytics for Firebase and Firebase Performance Monitoring — usage statistics and performance monitoring in versions 1.1.2 and earlier (removed in 1.2.0). <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy policy</a>.</li>
     <li>GitHub Pages (GitHub, Inc.) — when the app starts, it downloads a public settings file (version.json) used for update notices. The request contains no information about you, but the server may keep standard access logs such as your IP address. <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">Privacy statement</a>.</li>
   </ul>
   <h2>4. Data retention &amp; deletion</h2>
-  <p>Study data stored on your device is deleted when you delete the app. Crash and launch (session) diagnostics, and usage and performance data from versions 1.1.2 and earlier, are retained and deleted under Google's policies.</p>
+  <p>Study data stored on your device is deleted when you delete the app. Crash and launch (session) diagnostics are retained and deleted under Google's policies.</p>
   <h2>5. Children's privacy</h2>
   <p>The app does not knowingly collect personal information from children under 13.</p>
   <h2>6. Contact</h2>
