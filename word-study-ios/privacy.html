@@ -34,7 +34,7 @@
 </head>
 <body>
   <h1>개인정보 처리방침</h1>
-  <p class="meta">마나비(Manabi) · 시행일: 2026-06-10</p>
+  <p class="meta">마나비(Manabi) · 시행일: 2026-06-10 · 최종 개정: 2026-11-03</p>
 
   <p>마나비(이하 "앱")는 이용자의 개인정보를 소중히 다룹니다. 본 앱은 회원가입이나 로그인이 없으며,
   학습에 필요한 데이터는 원칙적으로 이용자의 기기 안에만 저장합니다.</p>
@@ -51,16 +51,28 @@
     <li>기기 모델, 운영체제 버전</li>
     <li>크래시 시점의 앱 상태(메모리 등 기술 정보)</li>
   </ul>
-  <p>이 정보는 이용자 개인을 식별하지 않으며, 광고·추적(App Tracking) 목적으로 사용하지 않습니다.</p>
+  <p>또한 크래시 없이 실행된 비율을 계산하기 위해, 앱을 실행할 때마다 다음 실행(세션) 정보가 전송됩니다.</p>
+  <ul>
+    <li>앱 설치마다 임의로 만들어지는 식별자, 세션 식별자, 실행 시각</li>
+    <li>기기 모델, 운영체제·앱 버전</li>
+  </ul>
+  <p>이 정보는 이용자 개인을 식별하지 않으며, 광고·추적(App Tracking) 목적으로 사용하지 않습니다.
+  앱은 사용 통계(Analytics)나 광고 SDK를 사용하지 않습니다.</p>
 
   <h2>3. 제3자 서비스</h2>
   <div class="card">
     <strong>Google Firebase Crashlytics</strong> — 크래시 리포팅·진단<br>
     개인정보 처리방침: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
   </div>
+  <div class="card">
+    <strong>GitHub Pages(GitHub, Inc.)</strong> — 업데이트 안내용 설정 파일 제공<br>
+    앱을 실행하면 업데이트 안내를 위한 공개 설정 파일(version.json)을 내려받습니다. 이 요청에는 이용자 정보가 담기지 않지만,
+    서버에 일반적인 접속 기록(IP 주소 등)이 남을 수 있습니다.<br>
+    개인정보 처리방침: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub General Privacy Statement</a>
+  </div>
 
   <h2>4. 데이터 보관·삭제</h2>
-  <p>기기에 저장된 학습 데이터는 앱을 삭제하면 함께 삭제됩니다. 크래시 진단 데이터는 Google의 정책에 따라 보관·삭제됩니다.</p>
+  <p>기기에 저장된 학습 데이터는 앱을 삭제하면 함께 삭제됩니다. 크래시·실행(세션) 진단 데이터는 Google의 정책에 따라 보관·삭제됩니다.</p>
 
   <h2>5. 아동의 개인정보</h2>
   <p>앱은 만 13세 미만 아동을 특정해 개인정보를 수집하지 않습니다.</p>
@@ -75,15 +87,26 @@
   <hr>
 
   <h1 class="en">Privacy Policy <span style="font-size:1rem;">(English)</span></h1>
-  <p class="meta">Manabi · Effective date: 2026-06-10</p>
+  <p class="meta">Manabi · Effective date: 2026-06-10 · Last updated: 2026-11-03</p>
   <p>Manabi ("the app") respects your privacy. There is no sign-up or login, and study data is stored only on your device by default.</p>
   <h2>1. Information we do NOT collect</h2>
   <p>The app does <strong>not collect personally identifiable information</strong> such as name, email, phone, or location. Your study progress and settings are stored locally on your device and are not transmitted.</p>
   <h2>2. Crash &amp; diagnostic data</h2>
-  <p>To improve stability, the app uses <strong>Firebase Crashlytics (Google LLC)</strong>. If the app crashes, anonymous diagnostics may be collected: crash logs, device model, OS version, and app state at the time of the crash. This data does not identify you and is not used for advertising or tracking.</p>
+  <p>To improve stability, the app uses <strong>Firebase Crashlytics (Google LLC)</strong>. If the app crashes, anonymous diagnostics may be collected: crash logs, device model, OS version, and app state at the time of the crash.</p>
+  <p>To calculate the share of launches without a crash, the app also sends launch (session) information each time it starts: a random per-install identifier, a session identifier, the launch time, device model, and OS and app version.</p>
+  <p>This data does not identify you and is not used for advertising or tracking. The app does not use analytics or advertising SDKs.</p>
   <h2>3. Third-party services</h2>
-  <p>Google Firebase Crashlytics — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">privacy policy</a>.</p>
-  <h2>4. Contact</h2>
-  <p>Questions? Email <a href="mailto:dksqnswlwhr.support@gmail.com">dksqnswlwhr.support@gmail.com</a>.</p>
+  <ul>
+    <li>Google Firebase Crashlytics — crash reporting and diagnostics. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy policy</a>.</li>
+    <li>GitHub Pages (GitHub, Inc.) — when the app starts, it downloads a public settings file (version.json) used for update notices. The request contains no information about you, but the server may keep standard access logs such as your IP address. <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">Privacy statement</a>.</li>
+  </ul>
+  <h2>4. Data retention &amp; deletion</h2>
+  <p>Study data stored on your device is deleted when you delete the app. Crash and launch (session) diagnostics are retained and deleted under Google's policies.</p>
+  <h2>5. Children's privacy</h2>
+  <p>The app does not knowingly collect personal information from children under 13.</p>
+  <h2>6. Contact</h2>
+  <p>Questions about this policy or the app? Email <a href="mailto:dksqnswlwhr.support@gmail.com">dksqnswlwhr.support@gmail.com</a>.</p>
+  <h2>7. Changes to this policy</h2>
+  <p>If this policy changes, we will post the changes and the new effective date on this page.</p>
 </body>
 </html>
